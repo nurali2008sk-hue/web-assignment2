@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 50px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0056b3;
+  border-bottom: 2px solid #eef;
+  padding-bottom: 8px;
+}
+
+/* ==========================================
+   TASK 0: Navigation Bar (Flexbox)
+   ========================================== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 15px 40px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Spacing between links */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* ==========================================
+   TASK 1: Card Row (Flexbox)
+   ========================================== */
+.card-row {
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* Equal height for cards */
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content p {
+  flex-grow: 1;
+  margin: 10px 0 15px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* ==========================================
+   TASK 2: Page Layout with Grid Areas
+   ========================================== */
+.grid-page-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+  gap: 10px;
+  min-height: 250px;
+  text-align: center;
+}
+
+.grid-header {
+  grid-area: header;
+  background: #3b82f6;
+  color: white;
+  padding: 15px;
+}
+
+.grid-sidebar {
+  grid-area: sidebar;
+  background: #93c5fd;
+  padding: 15px;
+}
+
+.grid-main {
+  grid-area: main;
+  background: #e0f2fe;
+  padding: 15px;
+}
+
+.grid-footer {
+  grid-area: footer;
+  background: #1d4ed8;
+  color: white;
+  padding: 15px;
+}
+
+/* ==========================================
+   TASK 3: Image Gallery (CSS Grid)
+   ========================================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover .caption {
+  transform: translateY(0);
+}
+
+/* ==========================================
+   TASK 4: Portfolio Page Layout
+   ========================================== */
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.portfolio-projects {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.project-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.portfolio-sidebar {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Global Footer */
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  margin-top: 40px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2 - Flexbox & Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TASK 0: Navigation Bar (Flexbox) -->
+  <header class="main-header">
+    <div class="logo">MyBrand</div>
+    <nav class="nav-links">
+      <a href="#cards">Cards</a>
+      <a href="#layout">Layout</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- TASK 1: Card Row (Flexbox) -->
+    <section id="cards" class="section">
+      <h2>Card Row </h2>
+      <div class="card-row">
+        <div class="card">
+          <img src="images/thefirst.jpg" alt="Card 1">
+          <div class="card-content">
+            <h3>Project 1</h3>
+            <p>Nothing</p>
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Second.jpg" alt="Card 2">
+          <div class="card-content">
+            <h3>Project 2</h3>
+            <p>Nothing.</p>
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/third.jpg" alt="Card 3">
+          <div class="card-content">
+            <h3>Project 3</h3>
+            <p>Suprise!!Nothing.</p>
+            <button class="btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK 2: Page Layout with Grid Areas -->
+    <section id="layout" class="section">
+      <h2>Page Layout with Grid Areas</h2>
+      <div class="grid-page-layout">
+        <header class="grid-header">Grid Header</header>
+        <aside class="grid-sidebar">Sidebar</aside>
+        <main class="grid-main">Main Content Area</main>
+        <footer class="grid-footer">Grid Footer</footer>
+      </div>
+    </section>
+
+    <!-- TASK 3: Image Gallery (CSS Grid) -->
+    <section id="gallery" class="section">
+      <h2>Image Gallery</h2>
+      <div class="gallery-grid">
+        <!-- 9 элементов галереи -->
+        <div class="gallery-item">
+          <img src="images/perkoro.jpg" alt="Gallery Image 1">
+          <div class="caption">Image Caption 1</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/four.jpg" alt="Gallery Image 2">
+          <div class="caption">Image Caption 2</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/fifth.jpg" alt="Gallery Image 3">
+          <div class="caption">Image Caption 3</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/six.jpg" alt="Gallery Image 4">
+          <div class="caption">Image Caption 4</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/seven.jpg" alt="Gallery Image 5">
+          <div class="caption">Image Caption 5</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/nine.jpg" alt="Gallery Image 6">
+          <div class="caption">Image Caption 6</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/last.jpg" alt="Gallery Image 7">
+          <div class="caption">Image Caption 7</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/nolast.jpg" alt="Gallery Image 8">
+          <div class="caption">Image Caption 8</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/balam.jpg" alt="Gallery Image 9">
+          <div class="caption">Image Caption 9</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK 4: Portfolio Page (Combining Flexbox & Grid) -->
+    <section id="portfolio" class="section">
+      <h2>Portfolio Page </h2>
+      <div class="portfolio-layout">
+        <!-- Main Portfolio Content (Left) -->
+        <div class="portfolio-projects">
+          <h3>My Projects</h3>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h4>Project 1</h4>
+              <p>Nothing:/</p>
+              <button class="btn">View Details</button>
+            </div>
+            <div class="project-card">
+              <h4>Project 2</h4>
+              <p>What do u think?</p>
+              <button class="btn">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio Sidebar (Right) -->
+        <aside class="portfolio-sidebar">
+          <h3>About Me</h3>
+          <p>I am Serikkali Nurali and im doing my j*b</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2026 Assignment 2. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
