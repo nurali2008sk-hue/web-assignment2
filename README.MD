@@ -1,15 +1,6 @@
-# Assignment 2: Advanced CSS (Flexbox & Grid)
-
-**Student:** Nurali Serikkali  
-**Group:** SE-2517  
-**University:** Astana IT University (AITU)  
-
----
 
 ## 📌 Project Overview
 This repository contains the code for **Assignment 2** on modern layout techniques in Front-End Development. The project demonstrates the usage of **CSS Flexbox** and **CSS Grid** to build flexible, responsive, and well-structured web interfaces.
-
----
 
 ## 🛠 Features & Tasks
 
@@ -30,12 +21,6 @@ This repository contains the code for **Assignment 2** on modern layout techniqu
 
 - **Task 4. Portfolio Page (Combined Layout):**
   - Combining Flexbox for internal card mechanics with CSS Grid for overall page architecture.
-
----
-
-## 🚀 Live Demo
-You can view the published project on GitHub Pages:  
-👉 **[View Assignment 2 Live](https://nurali2008sk-hue.github.io/my-first-webpage/)** *(или вставь актуальную ссылку на свой репозиторий)*
 
 ---
 
